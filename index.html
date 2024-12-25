@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 85%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 0;
+    }
+
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    
+    .intro {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .profile-pic {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .intro-text h1 {
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .intro-text h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .stats {
+      display: flex;
+      gap: 50px;
+      font-size: 24px;
+      margin-top: 10px;
+    }
+
+    .stats span {
+      color: #e63946;
+    }
+    .stats div {
+      text-align: center;
+    }
+
+    .about {
+      margin-bottom: 50px;
+    }
+
+    .about h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .resume-btn {
+      display: inline-block;
+      padding: 10px 25px;
+      border: 2px solid #e63946;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      border-radius: 5px;
+      transition: all 0.3s;
+      cursor: pointer;
+      background-color: transparent;
+    }
+     
+    .skills {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+
+    .skills h4 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .skill-tags span {
+      display: inline-block;
+      padding: 8px 15px;
+      margin: 5px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      background-color: #f9f9f9;
+    }
+
+  
+    .experience {
+      margin-bottom: 50px;
+    }
+    
+    .experience h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .experience-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 20px; 
+    }
+    
+    .job {
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    
+    .job h4 {
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 5px;
+    }
+    
+    .job h5 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .job ul {
+      padding-left: 20px;
+    }
+    
+    .job ul li {
+      list-style-type: disc;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <header class="header">
+      <div class="logo">JASON STROFF</div>
+    </header>
+
+    
+    <section class="intro">
+      <img src="https://www.cornerstonemontgomery.org/wp-content/uploads/2022/10/pexels-monstera-5384429@2x.png" alt="Profile Picture" class="profile-pic">
+      <div class="intro-text">
+        <h1>Hi there</h1>
+        <h2>I'm Jason Stroff<br>UI/UX DESIGNER +<br>DEVELOPER based in Florida.</h2>
+        <div class="stats">
+          <div><span>6+</span> Experience</div>
+          <div><span>89</span> Projects</div>
+          <div><span>52</span> Happy Clients</div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="about">
+      <h3>About Me</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum ante a porta blandit. Quisque velit tortor, ultricies in quam ut, luctus convallis metus.</p>
+      <button class="resume-btn">Download Resume</button>
+    </section>
+
+    
+    <section class="skills">
+      <div>
+        <h4>Core Skills</h4>
+        <div class="skill-tags">
+          <span>Javascript</span>
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>MongoDB</span>
+          <span>Vue.js</span>
+          <span>React</span>
+        </div>
+      </div>
+      <div>
+        <h4>Other Skills</h4>
+        <div class="skill-tags">
+          <span>Storybook</span>
+          <span>PWA</span>
+          <span>Responsive Web Design</span>
+          <span>React</span>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="experience">
+      <h3>Work Experience</h3>
+      <div class="experience-container">
+        
+        <div class="job">
+          <h4>2019 - Present</h4>
+          <h5>Matrix Media Inc</h5>
+            <p><strong>Full Stack Developer</strong></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, omare metus ut, congue enim. Sed fermentum.</p>
+            <li>Lorem ipsum dolor sit amet,consectetur adipiscing elit. Duis quis sem maximus, omare metus ut.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+          </ul>
+        </div>
+        
+        <div class="job">
+          <h4>2018 - 2019</h4>
+          <h5>Lexinda</h5>
+            <p><strong>Senior App Developer</strong></p>
+            <P>Lorem ipsum dolor sit amet, consectetur adipiscing alit. Duis quis sem maximus, omare metus ut, congue enim. Sed fermentum.</P>
+            <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, omare metus ut.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elt.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit. Duis quis sem maximus, omare metus ut.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
